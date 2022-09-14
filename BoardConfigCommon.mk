@@ -92,6 +92,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/cringe
 TARGET_KERNEL_CONFIG := a50_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_CLANG_VERSION := r416183b
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung

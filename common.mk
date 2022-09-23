@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/a50-common
+COMMON_PATH := device/samsung/cringe-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/a50-common/a50-common-vendor.mk)
+$(call inherit-product, vendor/samsung/cringe-common/cringe-common-vendor.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     android.hardware.soundtrigger@2.0-impl:32 \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -66,7 +65,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64 \
     libsensorndkbridge \
-    GCameraGoPrebuilt
 
 # ConfigStore
 PRODUCT_PACKAGES += \

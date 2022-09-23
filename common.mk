@@ -117,44 +117,7 @@ PRODUCT_PACKAGES += \
    libhwbinder \
    libhwbinder.vendor
 
-<<<<<<< HEAD
 # init
-=======
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml
-
-# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
-
-# Init
-PRODUCT_PACKAGES += \
-    init.mmi.ramdump.rc \
-    init.mmi.usb.rc \
-    init.mmi.usb.sh \
-    init.qcom.rc \
-    init.moto.rc \
-    init.power.rc \
-    init.class_main.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qti.qseecomd.sh \
-    ueventd.qcom.rc \
-    wlan_carrier_bin.sh
-
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
-
-# IRQ
->>>>>>> e8bca0a1 (sdm660-common: Makefile: Inherit several Android Go configurations)
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.exynos9610:$(TARGET_COPY_OUT_RAMDISK)/fstab.exynos9610 \
     $(COMMON_PATH)/configs/init/fstab.exynos9610:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.exynos9610 \

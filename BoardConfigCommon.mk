@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/samsung/a50-common
+COMMON_PATH := device/samsung/cringe-common
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
@@ -91,6 +91,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/cringe
 TARGET_KERNEL_CONFIG := a50_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
